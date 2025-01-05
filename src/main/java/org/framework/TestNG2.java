@@ -35,7 +35,7 @@ public class TestNG2 extends TestNG1 {
             WebElement logo = driver.findElement(By.xpath("//div[@class='app_logo']"));
             boolean isLogoDisplayed = logo.isDisplayed();
             Assert.assertTrue(isLogoDisplayed);
-            System.out.println("Logo Displayed");
+            System.out.println("Logo Displayed properly");
         }
         @Test
     public void Testcase3() {
