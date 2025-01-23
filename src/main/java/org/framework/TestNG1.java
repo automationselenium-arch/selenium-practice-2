@@ -13,11 +13,11 @@ public class TestNG1 {
         System.out.println("Stopped Reporting and generating report........");
     }
 
-    @Parameters({"Browser","Url"})
+
     @BeforeMethod
-    public void launchBrowserApplication(String Browser, String Url){
-        System.out.println(Browser+ " is launched.....");
-        System.out.println(Url + " is launched.....");
+    public void launchBrowserApplication(){
+        System.out.println( " is launched.....");
+        System.out.println( " is launched.....");
     }
     @BeforeMethod(dependsOnMethods = {"launchBrowserApplication"})
     public void loginIntoApplication(){
